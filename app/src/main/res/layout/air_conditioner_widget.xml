@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35f7f7f7"
+    android:gravity="center|end"
+    android:orientation="horizontal"
+    android:padding="@dimen/widget_margin">
+
+    <!-- 背景色を変えるためのレイアウト -->
+    <LinearLayout
+        android:id="@+id/widget_background_cool"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#8587cefa"
+        android:visibility="gone">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/widget_background_warm"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#75ff0000"
+        android:visibility="gone">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/widget_background_auto"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#85f7f7f7"
+        android:visibility="gone">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/widget_background_dry"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#85ffefd5"
+        android:visibility="gone">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/widget_background_blow"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#85e0ffff"
+        android:visibility="gone">
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|end"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/modeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mode" />
+
+            <ImageButton
+                android:id="@+id/iconBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="@dimen/button_padding"
+                android:layout_margin="@dimen/button_margin"
+                android:background="#0000"
+                app:srcCompat="@drawable/device_icon_airconditioner"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/no_image"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/button_margin" >
+
+            <TextView
+                android:id="@+id/airVolumeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:layout_alignBaseline="@id/airVolumeBtn"
+                android:layout_above="@id/airVolumeBtn"
+                android:textColor="#000"
+                android:translationZ="40dp"
+                android:text="AUTO" />
+
+
+            <Button
+                android:id="@+id/airVolumeBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="@dimen/button_padding"
+                android:layout_margin="@dimen/button_margin"
+                android:background="@drawable/ac_fun_button"
+                android:gravity="bottom|start"
+                android:translationZ="0dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/w_button_normal_background">
+
+            <ImageButton
+                android:id="@+id/minusBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/w_air_button_state"
+                android:scaleType="fitCenter"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/no_image" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="25" />
+
+            <ImageButton
+                android:id="@+id/plusBtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/w_air_button_state"
+                android:scaleType="fitCenter"
+                android:layout_margin="3dp"
+                android:contentDescription="@string/no_image" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/onOffBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/w_button_state"
+            android:text="off" />
+
+    </LinearLayout>
+</RelativeLayout>

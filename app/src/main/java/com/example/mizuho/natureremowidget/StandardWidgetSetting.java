@@ -387,10 +387,12 @@ public class StandardWidgetSetting extends AppCompatActivity {
             if (responseCode != 200) {
                 Intent intent = new Intent(StandardWidgetSetting.this, SetTokenActivity.class);
                 startActivityForResult(intent, REQUEST_CODE);
-                return "failed";
+                response = "failed";
+            } else {
+                response = convertToString(urlConnection.getInputStream());
             }
 
-            response = convertToString(urlConnection.getInputStream());
+
 
         } catch (IOException e) {
             Log.d(TAG, "IOException");

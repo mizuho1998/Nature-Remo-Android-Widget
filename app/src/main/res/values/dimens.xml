@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="button_width">60dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_margin">3dp</dimen>
+    <dimen name="button_padding">2dp</dimen>
+    <dimen name="setTokenBtn_margin">5dp</dimen>
+    <dimen name="spinner_margin">5dp</dimen>
+    <dimen name="spinner_padding">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

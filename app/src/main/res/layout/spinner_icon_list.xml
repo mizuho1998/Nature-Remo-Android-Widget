@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/spinner_margin"
+        android:padding="@dimen/spinner_padding"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/w_button_normal_background"
+        android:contentDescription="@string/no_image"/>
+
+</LinearLayout>

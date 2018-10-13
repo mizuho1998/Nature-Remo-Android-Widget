@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NatureRemoWidget</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="no_image">no image</string>
+    <string name="description">no image</string>
+
+    <string name="ok">OK</string>
+    <string name="set_token">set token</string>
+    <string name="title_activity_standard_widget_setting">StandardWidgetSetting</string>
+    <string name="title_activity_set_token">SetTokenActivity</string>
+</resources>

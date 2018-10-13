@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialKeyguardLayout="@layout/room_monitor_widget"
+    android:initialLayout="@layout/room_monitor_widget"
+    android:minHeight="40dp"
+    android:minWidth="110dp"
+    android:previewImage="@drawable/monitor_preview"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen">
+
+</appwidget-provider>

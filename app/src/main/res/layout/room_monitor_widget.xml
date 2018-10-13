@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fff"
+    android:gravity="center"
+    android:padding="@dimen/widget_margin">
+
+
+    <Button
+        android:id="@+id/roomMonitorWidgetBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/w_button_state"
+        android:text="get" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:padding="2dp"
+            android:text="tm" />
+
+        <TextView
+            android:id="@+id/textViewIl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="il"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/textViewHu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:padding="2dp"
+            android:text="hu" />
+
+    </LinearLayout>
+
+</LinearLayout>

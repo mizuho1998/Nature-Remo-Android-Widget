@@ -36,7 +36,7 @@ public class BaseWidget extends AppWidgetProvider {
         }
 
         @Override
-        public void run() {
+        public void run() {B
             // URLへのコネクションを取得する。
             HttpURLConnection urlConnection = null;
 

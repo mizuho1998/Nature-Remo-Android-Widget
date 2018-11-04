@@ -64,8 +64,6 @@ public class BaseWidget extends AppWidgetProvider {
                 if (responseCode != 200) {
                     // toastで結果を表示
                     displayToast(context, "failed " + String.valueOf(responseCode));
-                } else if (responseCode != 429) {
-                    displayToast(context, "to many request " + String.valueOf(responseCode));
                 } else {
                     // toastで結果を表示
                     displayToast(context, "success");

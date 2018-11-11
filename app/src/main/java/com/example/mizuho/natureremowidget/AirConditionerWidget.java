@@ -270,7 +270,7 @@ public class AirConditionerWidget extends BaseWidget {
 
                 if (responseCode != 200) {
                     // toastで結果を表示
-                    displayToast(context, "failed !!!!");
+                    displayToast(context, "failed (AirConditionerWidget)");
                 } else {
                     // toastで結果を表示
                     displayToast(context, "success");
@@ -475,6 +475,8 @@ public class AirConditionerWidget extends BaseWidget {
                     newDir = "";
                     newVol = "auto";
                     newPower = "";
+                } else {
+                    return;
                 }
 
             } catch (JSONException e) {
